@@ -16,12 +16,19 @@ public class SnakeAndLadder {
             switch ((int) Action) {
                 case 0:
                     position = position;
-                    System.out.println(position);
+                    //System.out.println(position);
                     break;
 
                 case 1:
-                    position = position + DieNumber;
-                    System.out.println(position);
+                    if(position+DieNumber<=100) {
+                        position = position + DieNumber;
+                        System.out.println(position);
+                    }
+                    else
+                    {
+                        position=position;
+                    }
+
                     break;
 
                 case 2:
@@ -33,7 +40,7 @@ public class SnakeAndLadder {
                     {
                         position=0;
                     }
-                    System.out.println(position);
+                    //System.out.println(position);
                     break;
 
 
