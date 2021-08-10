@@ -7,10 +7,11 @@ public class SnakeAndLadder {
     public static void main(String[] args) {
         double position = 0;
         String Player1 = "Ruchi";
-        double DieNumber = Math.floor(Math.random() * 10) % 6;
+
         //System.out.println("The die number is" + DieNumber);
         //double currentposition = 0;
         while (position < 100) {
+            double DieNumber = Math.floor(Math.random() * 10) % 6;
             double Action = Math.floor(Math.random() * 10) % 3;
 
             switch ((int) Action) {
