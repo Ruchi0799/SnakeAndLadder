@@ -7,12 +7,14 @@ public class SnakeAndLadder {
     public static void main(String[] args) {
         double position = 0;
         String Player1 = "Ruchi";
-        double DieNumber = Math.floor(Math.random() * 10) % 6;
+        int count=0;
+
         //System.out.println("The die number is" + DieNumber);
         //double currentposition = 0;
         while (position < 100) {
             double Action = Math.floor(Math.random() * 10) % 3;
-
+            double DieNumber = Math.floor(Math.random() * 10) % 6;
+            count++;
             switch ((int) Action) {
                 case 0:
                     position = position;
@@ -46,8 +48,8 @@ public class SnakeAndLadder {
 
             }
 
-            }
+        }
 
-        System.out.println("You Won!");
+        System.out.println("You Won after rolling die for " + count + " Times");
     }
 }
